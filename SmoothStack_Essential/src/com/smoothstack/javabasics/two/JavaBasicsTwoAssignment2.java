@@ -40,16 +40,21 @@ public class JavaBasicsTwoAssignment2 {
 		construct2DArray();
 		
 		int max = 0;
+		int row = 0;
+		int column = 0;
 		
 		for (int i = 0; i < nestedArray.length; i++) {
 			for (int j = 0; j < nestedArray[i].length; j++) {
 				if(max < nestedArray[i][j]) {
 					max = nestedArray[i][j];
+					row = i + 1;
+					column = j + 1;
 				}
 			}
 		}
 		
 		System.out.println("The maximum number in this 2D array is: " + max);
+		System.out.println("Max is located at row " + row + " and Column " + column);
 	}
 
 }
