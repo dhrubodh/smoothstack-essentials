@@ -12,7 +12,4 @@ public interface Shape {
 	
 	public void calculateArea();
 	
-	default void display() {
-		calculateArea();
-	};
 }

@@ -23,7 +23,7 @@ public class Circle implements Shape{
 	}
 	
 	public void display() {
-		Shape.super.display();
+		calculateArea();
 		System.out.println("The area of the circle is: " + area);
 	}
 

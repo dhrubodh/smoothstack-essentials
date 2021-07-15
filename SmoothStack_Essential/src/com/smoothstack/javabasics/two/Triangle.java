@@ -20,7 +20,7 @@ public class Triangle implements Shape{
 	}
 	
 	public void display() {
-		Shape.super.display();
+		calculateArea();
 		System.out.println("The area of the Triangle is: " + area);
 	}
 
