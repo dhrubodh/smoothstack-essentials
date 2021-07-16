@@ -15,6 +15,7 @@ import org.junit.Test;
 import com.smoothstack.javabasics.weekOne.Functional;
 import com.smoothstack.javabasics.weekOne.Lambdas;
 import com.smoothstack.javabasics.weekOne.Recursion;
+import com.smoothstack.javabasics.weekOne.SampleSingleton;
 
 /**
  * @author dhrubo
@@ -101,6 +102,11 @@ public class JavaBasicsWeek1AssingmentTests {
 		assertEquals(true, rc.groupSumClump(0, arr1, 14));
 		assertEquals(false, rc.groupSumClump(0, arr2, 14));
 		assertNotEquals(true, rc.groupSumClump(0, arr2, 14));
+	}
+	
+	@Test
+	public void sampleSingletonTest() {
+		assertNotEquals(null, SampleSingleton.getInstance());
 	}
 
 }
