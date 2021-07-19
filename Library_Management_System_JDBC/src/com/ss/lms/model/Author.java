@@ -11,12 +11,12 @@ import java.util.Objects;
  *
  */
 public class Author {
-	
+
 	private Integer authorId;
 	private String authorName;
-	
-	private List <Book> books;
-	
+
+	private List<Book> books;
+
 	public Integer getAuthorId() {
 		return authorId;
 	}
@@ -62,8 +62,5 @@ public class Author {
 	public String toString() {
 		return "Author [authorId=" + authorId + ", authorName=" + authorName + "]";
 	}
-	
-	
-
 
 }
